@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<stfl-replacer-config>
+
+	<replace index="0">
+		<!-- remove auto-parser comments -->
+		<pattern><![CDATA[<!--###(.[^\-]*)-->]]></pattern>
+		<replacement></replacement>
+	</replace>
+	<replace index="1">
+		<!-- remove extra whitespace -->
+		<pattern><![CDATA[[\s\t]{2,}]]></pattern>
+		<modifiers>m</modifiers>
+		<replacement></replacement>
+	</replace>
+
+</stfl-replacer-config>
